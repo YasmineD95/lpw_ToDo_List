@@ -1,7 +1,6 @@
 import { Task } from "./task.js";
 import { TaskManager } from "./taskManager.js";
 
-// Récupère les éléments du DOM
 const taskInput = document.getElementById("taskInput");
 const taskForm = document.getElementById("taskForm");
 const taskList = document.getElementById("taskList");
@@ -38,7 +37,6 @@ taskForm.addEventListener("submit", (event) => {
 
 //  pour afficher les tâches dans la liste
 function renderTasks() {
-  // Efface la liste actuelle
   taskList.innerHTML = "";
 
   // Parcourir les tâches et les ajouter à la liste

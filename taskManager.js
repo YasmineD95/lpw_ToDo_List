@@ -18,3 +18,5 @@ export class TaskManager {
     }
   }
 }
+
+//ajouter setter getter

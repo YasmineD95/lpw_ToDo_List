@@ -7,7 +7,7 @@ const taskForm = document.getElementById("taskForm");
 const taskList = document.getElementById("taskList");
 const errorMessage = document.createElement("div");
 
-errorMessage.classList.add("text-red-500", "mb-4", "hidden"); // hidden=caché par défaut
+errorMessage.classList.add("text-red-500", "mb-4", "hidden");
 document.querySelector(".bg-white").insertBefore(errorMessage, taskList);
 
 const taskManager = new TaskManager();
@@ -19,7 +19,7 @@ taskForm.addEventListener("submit", (event) => {
 
   // si le champ de saisie est vide
   if (taskTitle === "") {
-    errorMessage.textContent = "Veuillez entrer un titre de tâche.";
+    errorMessage.textContent = "Veuillez entrer une tâche.";
     errorMessage.classList.remove("hidden");
   } else {
     //si pas vide on le cache
